@@ -1,39 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Armugham | SRE Portfolio</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Suraj Armugham is an enterprise IT professional with 5+ years of infrastructure support, cloud operations, automation, CI/CD, ITIL and platform reliability experience.">
+  <meta name="theme-color" content="#0B1020">
+  <meta property="og:title" content="Suraj Armugham | SRE, DevOps & Platform Engineering">
+  <meta property="og:description" content="Infrastructure Support / DevOps / SRE portfolio focused on enterprise operations, automation, cloud reliability and platform engineering.">
+  <meta property="og:type" content="website">
+  <title>Suraj Armugham | SRE, DevOps & Platform Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="hero">
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav__brand" href="#home" aria-label="Suraj Armugham home">Suraj Armugham</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu" id="nav-menu">
+        <a href="#experience">Experience</a>
+        <a href="https://github.com/SurajArmugham?tab=repositories" target="_blank" rel="noopener noreferrer">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="button button--small" href="assets/resume/suraj-armugham-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </div>
+    </nav>
+  </header>
 
-        <h1>Suraj Armugham</h1>
-
-        <h2>
-            Infrastructure Support Engineer
-            <br>
-            SRE | DevOps | Platform Engineering
-        </h2>
-
-        <p>
-            Building reliable systems through automation,
-            observability, cloud platforms and Kubernetes.
-        </p>
-
-        <div class="buttons">
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Infrastructure Support / DevOps / SRE</p>
+          <h1>Suraj Armugham</h1>
+          <p class="hero__subtitle">SRE | DevOps | Platform Engineering</p>
+          <p class="hero__description">Enterprise IT professional with 5+ years of experience across infrastructure support, environment management, ITIL operations, CI/CD releases, automation, monitoring and cloud reliability.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">Featured Projects</a>
+            <a class="button button--secondary" href="assets/resume/suraj-armugham-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          </div>
+          <div class="social-links" aria-label="Professional links">
             <a href="https://github.com/SurajArmugham">GitHub</a>
-
-            <a href="https://linkedin.com/in/suraj-armugham">
-                LinkedIn
-            </a>
+            <a href="https://www.linkedin.com/in/suraj-armugham">LinkedIn</a>
+            <a href="mailto:suraj.armugham@gmail.com">Email</a>
+          </div>
         </div>
-
+        <aside class="hero__card" aria-label="Professional summary">
+          <span>5+ Years Enterprise IT</span>
+          <span>Infrastructure Support</span>
+          <span>ITIL Operations</span>
+          <span>Cloud & Containers</span>
+          <span>CI/CD & Automation</span>
+          <span>Platform Reliability</span>
+        </aside>
+      </div>
     </section>
 
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">About</p><h2>Enterprise infrastructure experience with a reliability-first engineering mindset.</h2></div>
+        <div class="about__grid">
+          <div class="about__copy">
+            <p>I’m an enterprise IT professional with 5+ years of experience supporting infrastructure platforms, cloud operations, production workflows, CI/CD releases, ITIL processes and monitoring-driven troubleshooting across large-scale environments.</p>
+            <p>My background spans infrastructure support, environment management, incident and change operations, automation, vulnerability remediation, QA for internal tools and stakeholder coordination. I’m focused on growing into SRE and Platform Engineering roles where reliability, automation and operational excellence are central.</p>
+          </div>
+          <div class="about__principles">
+            <article><h3>Operational Reliability</h3><p>Incident, Change and Problem Management with SLA-focused service delivery.</p></article>
+            <article><h3>Automation Mindset</h3><p>Python APIs, CI/CD pipelines, Terraform, Ansible and workflow automation.</p></article>
+            <article><h3>Platform Thinking</h3><p>Cloud, containers, observability, security, documentation and repeatable delivery.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Skills</p><h2>Infrastructure, cloud, automation and reliability toolkit.</h2></div>
+        <div class="skills__grid">
+          <article class="skill-card"><h3>ITSM / ITIL</h3><p>Incident, Change, Problem, ServiceNow, Jira, RCA, Risk Management</p></article>
+          <article class="skill-card"><h3>Cloud & Containers</h3><p>AWS, Azure, PCF, Docker, Kubernetes</p></article>
+          <article class="skill-card"><h3>CI/CD & DevOps</h3><p>Git, GitHub Actions, Docker Hub, GitLab, Jenkins, Terraform, Ansible</p></article>
+          <article class="skill-card"><h3>Infrastructure & Systems</h3><p>Linux, Windows, VMware, SAN/NAS/RAID, Patch Management, Vulnerability Management</p></article>
+          <article class="skill-card"><h3>Monitoring & Observability</h3><p>Splunk, Grafana, Zabbix, Catchpoint, Nagios, New Relic, OEM</p></article>
+          <article class="skill-card"><h3>Security & IAM</h3><p>Active Directory, LDAP, SSH Keys, HashiCorp Vault, Secrets, TLS/SSL</p></article>
+          <article class="skill-card"><h3>Databases & Middleware</h3><p>PostgreSQL, Oracle, MySQL, SQL, IBM MQ, Kafka, GoldenGate</p></article>
+          <article class="skill-card"><h3>Programming & Testing</h3><p>Python, Bash, Java, FastAPI, Flask, PyTest, Selenium, Playwright, Rest Assured</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Experience</p><h2>Enterprise operations experience across infrastructure, cloud and production support.</h2></div>
+        <div class="timeline">
+          <article class="timeline-item"><p class="timeline-item__meta">Nov 2021 — Jan 2025</p><h3>Dell Technologies</h3><p class="timeline-item__role">Software Engineer 2 - IT · Infrastructure Support / DevOps / SRE</p><ul><li>Supported environment management across enterprise product teams, helping maintain platform availability and SLA performance.</li><li>Implemented monitoring-driven self-healing automation using Python-based REST APIs to reduce manual intervention and improve MTTR.</li><li>Supported CI/CD releases, Blue-Green deployments, smoke validations, rollback coordination, Terraform provisioning and Ansible configuration.</li></ul></article>
+          <article class="timeline-item"><p class="timeline-item__meta">Feb 2021 — Nov 2021</p><h3>Dell Technologies</h3><p class="timeline-item__role">Software Engineer 1 - IT · Associate Consultant</p><ul><li>Monitored environment health using Splunk, Grafana, Zabbix, Catchpoint, OEM and internal monitoring tools.</li><li>Managed ServiceNow incidents and changes across Oracle, Linux/Windows, PCF, SOA, Siebel, Salesforce and middleware environments.</li><li>Authored operational documentation for reboots, patching, deployments, migrations, certificate handling and data-centre maintenance.</li></ul></article>
+          <article class="timeline-item"><p class="timeline-item__meta">Nov 2019 — Oct 2020</p><h3>PowerSchool</h3><p class="timeline-item__role">Production Workflow Operations Engineer · Cloud Operations / Hosting</p><ul><li>Managed incident, service request and alert queues through Freshservice while supporting OLA/SLA compliance and PagerDuty acknowledgement.</li><li>Supported Azure support cases, incident follow-ups, RCA tracking, Jira updates and operational reporting.</li><li>Used Nagios and New Relic monitoring to support cloud-hosted production workflows.</li></ul></article>
+          <article class="timeline-item"><p class="timeline-item__meta">Jan 2019 — Sep 2019</p><h3>Thomson Reuters / Refinitiv</h3><p class="timeline-item__role">Application Support Engineer · Application Operations</p><ul><li>Monitored vendor-to-client data feeds and supported production application and database health checks.</li><li>Managed ServiceNow Incident, Problem and Change tickets while coordinating vendor follow-ups and customer queries.</li><li>Supported SQL/Pervasive SQL requests, production backups, FTP outage incidents and Azure replication troubleshooting.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-project" id="projects">
+      <div class="container">
+        <div class="project-showcase">
+          <div class="project-showcase__content">
+            <p class="eyebrow">Featured Project</p><h2>Incident Diagnostics API</h2><p class="project-showcase__subtitle">SRE / Platform Engineering Portfolio Project</p>
+            <p>A FastAPI-based diagnostics service that automates remote Linux health checks over SSH, stores diagnostic history in PostgreSQL, and demonstrates production-style deployment patterns using Docker, Kubernetes, GitHub Actions, ingress, TLS and secrets management.</p>
+            <div class="project-tags"><span>FastAPI</span><span>Python</span><span>PostgreSQL</span><span>Paramiko SSH</span><span>Docker</span><span>Docker Compose</span><span>Kubernetes</span><span>GitHub Actions</span><span>Ingress</span><span>TLS</span><span>Secrets</span></div>
+            <div class="project-highlights"><article><h3>Diagnostics Automation</h3><p>Executes remote disk, memory and service health checks through controlled SSH workflows.</p></article><article><h3>CI/CD Delivery</h3><p>Uses GitHub Actions with a self-hosted runner for PyTest validation, Docker image lifecycle and deployment automation.</p></article><article><h3>Kubernetes Ready</h3><p>Includes Deployments, ReplicaSets, Services, ConfigMaps, probes, resource limits, PVC/PV persistence and ingress-nginx routing.</p></article><article><h3>Secure Platform Patterns</h3><p>Uses secrets management, TLS certificates and authentication-aware deployment configuration.</p></article></div>
+            <div class="project-actions"><a class="button button--primary" href="https://github.com/SurajArmugham/diagnostics-api">View GitHub</a><a class="button button--secondary" href="#contact">Discuss Project</a></div>
+          </div>
+          <div class="project-showcase__visual" aria-label="Architecture placeholder"><div class="diagram"><span>API</span><span>SSH Diagnostics</span><span>PostgreSQL</span><span>Kubernetes</span><span>Ingress + TLS</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications" id="certifications">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">Certifications & Education</p><h2>Continuous learning across ITSM, cloud, automation and project delivery.</h2></div>
+        <div class="certification-grid">
+          <article class="certification-card"><h3>ITIL / ITSM</h3><p>ServiceNow Incident, Change and Problem Management</p></article>
+          <article class="certification-card"><h3>AWS</h3><p>Cloud Practitioner and SysOps Administrator Associate training</p></article>
+          <article class="certification-card"><h3>Automation Testing</h3><p>Selenium, PyTest, TestNG, Rest Assured and performance testing foundations</p></article>
+          <article class="certification-card"><h3>Python</h3><p>Python Programming certification from HPE / Glisten Education</p></article>
+          <article class="certification-card"><h3>MBA Project Management</h3><p>Dublin Business School, Ireland</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact__card">
+        <p class="eyebrow">Contact</p><h2>Open to SRE, DevOps and Platform Engineering opportunities.</h2><p>Interested in roles focused on infrastructure reliability, cloud operations, automation, CI/CD, observability, ITSM process improvement and platform engineering.</p>
+        <div class="contact__links"><a href="https://github.com/SurajArmugham">GitHub</a><a href="https://www.linkedin.com/in/suraj-armugham">LinkedIn</a><a href="mailto:suraj.armugham@gmail.com">suraj.armugham@gmail.com</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© Suraj Armugham. SRE | DevOps | Platform Engineering.</p></footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
