@@ -145,6 +145,7 @@ transform:translateY(-7px) rotate(-45deg)
 position:fixed;
 inset:var(--header-height) 1rem auto;
 display:grid;
+justify-items:start;
 gap:.5rem;
 padding:1rem;
 background:rgba(17,24,39,.96);
@@ -153,6 +154,7 @@ border-radius:var(--radius-lg);
 box-shadow:var(--shadow-soft);
 opacity:0;
 pointer-events:none;
+text-align:left;
 transform:translateY(-.75rem);
 transition:var(--transition)
 }
@@ -198,6 +200,10 @@ color:var(--color-text)
 .button--small{
 min-height:38px;
 padding:.55rem .9rem
+}
+.nav__menu .button{
+justify-self:start;
+width:auto
 }
 .hero{
 min-height:calc(100svh - var(--header-height));
