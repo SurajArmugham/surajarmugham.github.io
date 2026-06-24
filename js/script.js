@@ -17,3 +17,26 @@ if (navToggle && navMenu) {
     });
   });
 }
+document.documentElement.classList.add('has-js');
+
+const experienceItems = document.querySelectorAll('.experience .timeline-item');
+
+if (experienceItems.length > 0) {
+  if ('IntersectionObserver' in window) {
+    const experienceObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -12% 0px',
+      threshold: 0.22,
+    });
+
+    experienceItems.forEach((item) => experienceObserver.observe(item));
+  } else {
+    experienceItems.forEach((item) => item.classList.add('is-visible'));
+  }
+}
