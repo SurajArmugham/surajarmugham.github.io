@@ -1,3 +1,14 @@
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+const resetScrollPosition = () => {
+  window.scrollTo(0, 0);
+};
+
+window.addEventListener('pageshow', resetScrollPosition);
+window.addEventListener('beforeunload', resetScrollPosition);
+
 const navToggle = document.querySelector('.nav__toggle');
 const navMenu = document.querySelector('.nav__menu');
 
