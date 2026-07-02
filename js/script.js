@@ -54,12 +54,18 @@ if (shareButtons.length > 0) {
   };
 
   shareButtons.forEach((shareButton) => {
+    const shareLabel = shareButton.querySelector('[data-share-label]');
+
     shareButton.addEventListener('click', () => {
       copyCurrentUrl().then(() => {
-        shareButton.textContent = 'Copied to clipboard';
+        if (!shareLabel) {
+          return;
+        }
+
+        shareLabel.textContent = 'Copied to clipboard';
 
         window.setTimeout(() => {
-          shareButton.textContent = 'Share';
+          shareLabel.textContent = 'Share';
         }, shareFeedbackDelay);
       });
     });
