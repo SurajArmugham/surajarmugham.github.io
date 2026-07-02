@@ -1,2 +1,2 @@
-Portfolio Website - Suraj Armugham
+Portfolio Website: Suraj Armugham
 Link: https://surajarmugham.github.io/
