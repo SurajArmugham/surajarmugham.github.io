@@ -512,21 +512,16 @@ transform:scaleY(1)
 .has-js .ai-engineering.is-visible .ai-workflow__step{
 opacity:1;
 transform:translate3d(0,0,0) scale(1);
-animation:ai-float 5.5s ease-in-out infinite;
 box-shadow:0 18px 50px rgba(0,0,0,.22),0 0 36px rgba(139,92,246,.2)
 }
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(2){transition-delay:90ms;animation-delay:.2s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(3){transition-delay:180ms;animation-delay:.4s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(4){transition-delay:270ms;animation-delay:.6s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(5){transition-delay:360ms;animation-delay:.8s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(6){transition-delay:450ms;animation-delay:1s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(7){transition-delay:540ms;animation-delay:1.2s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(8){transition-delay:630ms;animation-delay:1.4s}
-.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(9){transition-delay:720ms;animation-delay:1.6s}
-@keyframes ai-float{
-0%,100%{transform:translate3d(0,0,0)}
-50%{transform:translate3d(0,-8px,0)}
-}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(2){transition-delay:90ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(3){transition-delay:180ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(4){transition-delay:270ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(5){transition-delay:360ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(6){transition-delay:450ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(7){transition-delay:540ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(8){transition-delay:630ms}
+.has-js .ai-engineering.is-visible .ai-workflow__step:nth-child(9){transition-delay:720ms}
 @keyframes ai-orb{
 from{transform:translate3d(0,0,0) scale(1)}
 to{transform:translate3d(-24px,-18px,0) scale(1.16)}
@@ -621,17 +616,7 @@ grid-template-columns:repeat(2,1fr)
 min-height:560px
 }
 .ai-workflow__steps{
-grid-template-columns:repeat(2,1fr);
 align-content:center
-}
-.ai-workflow__step:nth-child(odd){
-justify-self:end
-}
-.ai-workflow__step:nth-child(even){
-justify-self:start
-}
-.ai-workflow__step--wide{
-grid-column:auto
 }
 }
 @media (min-width:960px){
