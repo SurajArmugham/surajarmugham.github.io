@@ -102,3 +102,27 @@ if (experienceItems.length > 0) {
     experienceItems.forEach((item) => item.classList.add('is-visible'));
   }
 }
+
+const aiEngineeringSection = document.querySelector('.ai-engineering');
+
+if (aiEngineeringSection) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (reducedMotion || !('IntersectionObserver' in window)) {
+    aiEngineeringSection.classList.add('is-visible');
+  } else {
+    const aiEngineeringObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -18% 0px',
+      threshold: 0.18,
+    });
+
+    aiEngineeringObserver.observe(aiEngineeringSection);
+  }
+}
