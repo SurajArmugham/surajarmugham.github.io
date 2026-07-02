@@ -28,6 +28,44 @@ if (navToggle && navMenu) {
     });
   });
 }
+const shareButtons = document.querySelectorAll('[data-share-button]');
+
+if (shareButtons.length > 0) {
+  const shareFeedbackDelay = 2000;
+
+  const copyCurrentUrl = () => {
+    const currentUrl = window.location.href;
+
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(currentUrl);
+    }
+
+    const textArea = document.createElement('textarea');
+    textArea.value = currentUrl;
+    textArea.setAttribute('readonly', '');
+    textArea.style.position = 'fixed';
+    textArea.style.top = '-9999px';
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+
+    return Promise.resolve();
+  };
+
+  shareButtons.forEach((shareButton) => {
+    shareButton.addEventListener('click', () => {
+      copyCurrentUrl().then(() => {
+        shareButton.textContent = 'Copied to clipboard';
+
+        window.setTimeout(() => {
+          shareButton.textContent = 'Share';
+        }, shareFeedbackDelay);
+      });
+    });
+  });
+}
+
 document.documentElement.classList.add('has-js');
 
 const experienceItems = document.querySelectorAll('.experience .timeline-item');
