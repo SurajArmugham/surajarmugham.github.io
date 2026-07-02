@@ -206,6 +206,9 @@ flex-shrink:0;
 width:1.15rem;
 height:1.15rem
 }
+.button__status{
+line-height:1
+}
 .sr-only,.visually-hidden{
 position:absolute;
 width:1px;

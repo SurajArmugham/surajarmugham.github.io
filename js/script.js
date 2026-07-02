@@ -54,18 +54,25 @@ if (shareButtons.length > 0) {
   };
 
   shareButtons.forEach((shareButton) => {
+    const shareStatus = shareButton.querySelector('[data-share-status]');
     const shareLabel = shareButton.querySelector('[data-share-label]');
+
+    const updateShareFeedback = (message) => {
+      if (shareStatus) {
+        shareStatus.textContent = message;
+      }
+
+      if (shareLabel) {
+        shareLabel.textContent = message;
+      }
+    };
 
     shareButton.addEventListener('click', () => {
       copyCurrentUrl().then(() => {
-        if (!shareLabel) {
-          return;
-        }
-
-        shareLabel.textContent = 'Copied to clipboard';
+        updateShareFeedback('Copied to clipboard');
 
         window.setTimeout(() => {
-          shareLabel.textContent = 'Share';
+          updateShareFeedback('Share');
         }, shareFeedbackDelay);
       });
     });
