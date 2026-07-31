@@ -639,6 +639,9 @@ grid-template-columns:1.1fr .9fr
 .project-highlights{
 grid-template-columns:repeat(2,1fr)
 }
+.project-highlights article:last-child:nth-child(odd){
+grid-column:1/-1
+}
 .ai-workflow{
 min-height:560px
 }
